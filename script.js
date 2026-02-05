@@ -22,6 +22,4 @@ var army = prompt("Have you ever been to the army?");
 
 if (army == "yes"); {
     console.log("You don't have to go")
-} else {
-    console.log("You must go")
 }
