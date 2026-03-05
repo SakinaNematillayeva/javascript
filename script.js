@@ -1,25 +1,15 @@
-var name = prompt("Enter your name") ;
-
-console.log(name)
-
-var age = prompt("Enter your age");
-
-if (age > 18 && age < 28) {
-    var age = prompt("what's your gender?");
+var name = prompt("Enter your name").trim();
+var age = +prompt("Enter your age").trim();
+var gender = prompt("Enter your gender (male, female)");
+if (gender == "man" && age >= 18 && age <= 28) {
+    var question = prompt("Have you ever been to the army?(yes,no)");
 } else {
-    console.log("Goodbye!")
+    console.log("Thank you!");
 }
 
-var gender = prompt("Enter your gender");
-
-if (gender == "female") {
-    var gender = prompt("Thank you");
+if (age >= 18 && age <= 28 && gender == "man" && question == "no") {
+    console.log("You should go to army!");
 } else {
-    console.log("Have you ever been army?")
-}
-
-var army = prompt("Have you ever been to the army?");
-
-if (army == "yes"); {
-    console.log("You don't have to go")
+    console.log("You don't have to go!");
+    
 }
